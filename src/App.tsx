@@ -13,6 +13,7 @@ import DigitalAdvertising from "./pages/services/DigitalAdvertising";
 import SEO from "./pages/services/SEO";
 import SocialMedia from "./pages/services/SocialMedia";
 import CommunityManagement from "./pages/services/CommunityManagement";
+import SiteAudit from "./pages/SiteAudit";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
