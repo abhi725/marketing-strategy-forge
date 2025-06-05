@@ -12,8 +12,10 @@ const Navigation = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'SwanSuite', path: '/swansuite' },
+    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Resources', path: '/resources' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Site Audit', path: '/site-audit' },
-    { name: 'SLA', path: '/sla' },
     { name: 'Contact', path: '/contact' },
   ];
 
