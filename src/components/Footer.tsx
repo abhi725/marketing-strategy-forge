@@ -42,14 +42,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">MS</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="text-lg font-bold">Marketing Strategy Forge</span>
+              <span className="text-xl font-bold">SwanDigitals</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Data-driven digital marketing that delivers real results. We help businesses scale through innovative strategies and transparent execution.
+              Leading digital marketing agency that transforms businesses through data-driven strategies and measurable results. 
+              Trusted by 500+ growing companies worldwide.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -92,7 +93,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Marketing Strategy Forge. All rights reserved.
+            © {currentYear} SwanDigitals. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">

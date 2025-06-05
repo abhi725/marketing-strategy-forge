@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -23,11 +24,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">MS</span>
+            <Link to="/" className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Marketing Strategy Forge</span>
+              <span className="text-2xl font-bold text-gray-900">SwanDigitals</span>
             </Link>
           </div>
 
@@ -44,7 +45,7 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="marketing-gradient text-white">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
               <Link to="/contact">Get Started</Link>
             </Button>
           </div>
@@ -83,7 +84,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild className="w-full marketing-gradient text-white">
+                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                   <Link to="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
                 </Button>
               </div>
