@@ -15,6 +15,9 @@ import SEO from "./pages/services/SEO";
 import SocialMedia from "./pages/services/SocialMedia";
 import CommunityManagement from "./pages/services/CommunityManagement";
 import SiteAudit from "./pages/SiteAudit";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import SLA from "./pages/SLA";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +40,9 @@ const App = () => (
           <Route path="/services/social-media" element={<SocialMedia />} />
           <Route path="/services/community-management" element={<CommunityManagement />} />
           <Route path="/site-audit" element={<SiteAudit />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/sla" element={<SLA />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
