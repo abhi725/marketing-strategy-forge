@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import SwanSuite from "./pages/SwanSuite";
 import ContentMarketing from "./pages/services/ContentMarketing";
 import DigitalAdvertising from "./pages/services/DigitalAdvertising";
 import SEO from "./pages/services/SEO";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/swansuite" element={<SwanSuite />} />
           <Route path="/services/content-marketing" element={<ContentMarketing />} />
           <Route path="/services/digital-advertising" element={<DigitalAdvertising />} />
           <Route path="/services/seo" element={<SEO />} />
