@@ -8,14 +8,10 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'SwanSuite', path: '/swansuite' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Resources', path: '/resources' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Site Audit', path: '/site-audit' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -29,7 +25,7 @@ const Navigation = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
               <span className="text-2xl font-bold text-gray-900">SwanDigitals</span>
@@ -42,14 +38,14 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive(item.path) ? 'text-blue-600' : 'text-gray-700'
+                className={`text-sm font-medium transition-colors hover:text-orange-600 ${
+                  isActive(item.path) ? 'text-orange-600' : 'text-gray-700'
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white">
               <Link to="/contact">Get Started</Link>
             </Button>
           </div>
@@ -58,7 +54,7 @@ const Navigation = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="text-gray-700 hover:text-orange-600 focus:outline-none"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -79,8 +75,8 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-blue-600 ${
-                    isActive(item.path) ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-orange-600 ${
+                    isActive(item.path) ? 'text-orange-600 bg-orange-50' : 'text-gray-700'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -88,7 +84,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 text-white">
                   <Link to="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
                 </Button>
               </div>

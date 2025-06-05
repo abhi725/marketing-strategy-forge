@@ -53,8 +53,8 @@ const TrustBadgesSection = () => {
             return (
               <div key={index} className="text-center group hover:scale-105 transition-transform">
                 <div className="flex flex-col items-center space-y-3 p-4 rounded-lg hover:bg-white hover:shadow-md transition-all">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                    <IconComponent className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" />
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                    <IconComponent className="w-6 h-6 text-orange-600 group-hover:text-white transition-colors" />
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-gray-900 mb-1">{badge.text}</div>
