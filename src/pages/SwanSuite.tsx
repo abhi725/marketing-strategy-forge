@@ -5,6 +5,7 @@ import SwanSuitePainSolution from '@/components/swansuite/SwanSuitePainSolution'
 import SwanSuiteSocialProof from '@/components/swansuite/SwanSuiteSocialProof';
 import SwanSuiteFeaturesGrid from '@/components/swansuite/SwanSuiteFeaturesGrid';
 import SwanSuiteDemoVideo from '@/components/swansuite/SwanSuiteDemoVideo';
+import SwanSuitePricingTeaser from '@/components/swansuite/SwanSuitePricingTeaser';
 import SwanSuitePricing from '@/components/swansuite/SwanSuitePricing';
 import SwanSuiteUrgency from '@/components/swansuite/SwanSuiteUrgency';
 import SwanSuiteFAQ from '@/components/swansuite/SwanSuiteFAQ';
@@ -18,6 +19,7 @@ const SwanSuite = () => {
       <SwanSuiteSocialProof />
       <SwanSuiteFeaturesGrid />
       <SwanSuiteDemoVideo />
+      <SwanSuitePricingTeaser />
       <SwanSuitePricing />
       <SwanSuiteUrgency />
       <SwanSuiteFAQ />
